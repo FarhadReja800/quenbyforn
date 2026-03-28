@@ -1,10 +1,23 @@
+import FchccNews from "./_components/FcgccNews"
+import FCHCCMedia from "./_components/FchccMedia"
+import Hero from "./_components/Hero"
+import CorporateMarquee from "./_components/Partners"
+import Video from "./_components/Video"
+import WhoWeAre from "./_components/WhoAreYou"
 
-const HomePage = () => {
+
+
+const Home = () => {
   return (
     <div>
-      <div>This is Home Page</div>
+     <Hero/>
+     <CorporateMarquee/>
+     <Video/>
+     <WhoWeAre/>
+     <FchccNews/>
+     <FCHCCMedia/>
     </div>
   )
 }
 
-export default HomePage
+export default Home
