@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomeLayout from "./src/pages/Home/layout";
-import Home from "./src/pages/Home";
+import HomeLayout from "@/pages/Home/layout";
+import Home from "@/pages/Home";
 import Members from "@/pages/Members";
 import StrategicPartners from "@/pages/PartnersDetails/_components/PartnerDetails";
 import NewMember from "@/pages/NewMember";
+import RedioProgram from "@/pages/RedioProgram";
 
 
 const router = createBrowserRouter([
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
       {
         path: "/partners/newmembers",
         element: <NewMember/>
-      }
+      },
+      {
+        path: "/partners/redioprogram",
+        element: <RedioProgram/>
+      },
       
     ],
   },

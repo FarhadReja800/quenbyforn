@@ -2,6 +2,7 @@ import { Search, User, Globe } from "lucide-react";
 import { Button } from "../../ui/button";
 import TopNavbar from "./TopNavbar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -38,25 +39,25 @@ const Header = () => {
                 onMouseEnter={() => link.name === "Members" && setOpen(true)}
                 onMouseLeave={() => link.name === "Members" && setOpen(false)}
               >
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="px-5 py-3 text-sm font-medium rounded-md transition-all duration-200 hover:text-orange-500"
                 >
                   {link.name}
-                </a>
+                </Link>
 
                 {/* 🔽 Dropdown */}
                 {link.name === "Members" && open && (
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                    <a href="/partners/newmembers" className="block px-4 py-2 hover:bg-gray-100">
+                    <Link to="/partners/newmembers" className="block px-4 py-2 hover:bg-gray-100">
                       New and Renewing Members
-                    </a>
-                    <a href="/members/directory" className="block px-4 py-2 hover:bg-gray-100">
-                      Directory
-                    </a>
-                    <a href="/members/settings" className="block px-4 py-2 hover:bg-gray-100">
+                    </Link>
+                    <Link to="/partners/redioprogram" className="block px-4 py-2 hover:bg-gray-100">
+                      Radio Program
+                    </Link>
+                    <Link to="/members/settings" className="block px-4 py-2 hover:bg-gray-100">
                       Settings
-                    </a>
+                    </Link>
                   </div>
                 )}
               </li>
