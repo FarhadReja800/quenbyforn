@@ -55,9 +55,16 @@ const Header = () => {
                     <Link to="/partners/redioprogram" className="block px-4 py-2 hover:bg-gray-100">
                       Radio Program
                     </Link>
-                    <Link to="/members/settings" className="block px-4 py-2 hover:bg-gray-100">
-                      Settings
+                    <Link to="/partners/podcastprogram" className="block px-4 py-2 hover:bg-gray-100">
+                      Podcast Program
                     </Link>
+                    <Link to="/partners/discountprogram" className="block px-4 py-2 hover:bg-gray-100">
+                      Discount Program
+                    </Link>
+                    <Link to="/partners/workshope" className="block px-4 py-2 hover:bg-gray-100">
+                      Work Shope
+                    </Link>
+                   
                   </div>
                 )}
               </li>
